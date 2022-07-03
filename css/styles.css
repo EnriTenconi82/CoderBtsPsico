@@ -90,9 +90,10 @@ ol, ul {
 }
 
 h1{ font-size: 2rem;
-    text-align: center;
-    display: inline-block;
     font-weight: 700;
+    padding-top: 1rem;
+    margin: 0 auto;
+    text-transform: uppercase;
 }
 
 h2{font-size: 3rem;
@@ -106,6 +107,7 @@ h3{
     font-size: 2.5rem;
     text-align: center;
     display: block;
+    padding-bottom: 1rem;
 }
 
 /* Bootstrap Nav tuning */
@@ -178,24 +180,12 @@ article{
     max-width: 1440px;
 }
 
-.contentEvenly{
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.contentCenter{
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    column-gap: 6rem;
-}
 
 
 
 /* HEADER - FOOTER SECTION global */
-.headerSection,.footerSection{
-    height: max-content;
-    padding: 1.5rem 0 1.5rem 0;
+.footerSection{
+    padding:1rem 1rem 0 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -206,8 +196,6 @@ article{
 
 
 .headerTitle{
-    margin:0 auto;
-    text-transform: uppercase;
     font-size: 3.5rem;
 }
 
@@ -323,20 +311,36 @@ article{
 }
 
 
+.teamPresentation{
+    min-width: 180px;
+    max-width: 700px;
+    text-align: left;
+    
+}
+
+.teamPresentation h4 {
+    font-style: italic;
+}
+
+.teamPresentation li{
+    padding-bottom: 2rem;
+}
+
+
+
 /* CSS contacto.html */
     
 .ownForm{
     max-width: 820px;
-
 }
- */
+
+
 .formBlock{ 
-    min-width: 14rem;
+    min-width: 10rem;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-between;
-    row-gap: 2rem;
+    justify-content:flex-start;
     
 }
 /* CSS radio positioning*/
@@ -344,7 +348,6 @@ article{
 .labelRadio,label{
     display: inline-block;
     width: 14rem;
-    /* padding-right: 2rem; */
     vertical-align:top;
     font-weight: 700;
     font-style: italic;
@@ -356,22 +359,6 @@ article{
     font-weight:500 ;
     font-style:normal;
 }
-
-.teamPresentation{
-    min-width: 180px;
-    max-width: 700px;
-    text-align: left;
-    
-}
-.teamPresentation h4 {
-    text-align: center;
-    font-style: italic;
-}
-
-.teamPresentation li{
-    padding-bottom: 2rem;
-}
-
 form input,button{
     background: none;
     font-size: 1.5rem;
@@ -408,10 +395,11 @@ form input:focus{
 
 form .button{
     margin-top: 1rem;
-  /*   padding:1rem; */
     border-radius: 0.5rem;
     margin-left: 3rem;
     border: none;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 form .button:hover{
@@ -419,16 +407,12 @@ form .button:hover{
     transition: 0.2s;
 }
 
-
-
 .buttonBlock{
     text-align: left;
 }
 
-@media only screen and (max-width: 350px){
-    h1{
-        font-size: 3rem;
-    }
+/*media queries*/
+@media only screen and (max-widtsh: 350px){
     
     .imgProceso{
         width: 100%;
