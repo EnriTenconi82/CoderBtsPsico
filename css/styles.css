@@ -89,7 +89,7 @@ ol, ul {
     list-style: none;     
 }
 
-h1{ font-size: 3.5rem;
+h1{ font-size: 2rem;
     text-align: center;
     display: inline-block;
     font-weight: 700;
@@ -241,21 +241,17 @@ article{
 /* CSS index.html _ servicios.html*/
 
 
-.galleryGap{
-    row-gap: 2rem;
-    column-gap: 2rem;
-}
+
 .figBenefits{
-   
-    display: inline-block;
+
 
     background-color: var(--figure-bg-color);
     border-radius: 2rem;
+    padding:1rem;
     text-align: center;
 }
 .figBenefits img{
     width: 100%;
-    margin-top: 1rem;
     border-radius: 2rem;
     } 
 
