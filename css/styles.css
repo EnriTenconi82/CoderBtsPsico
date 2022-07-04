@@ -257,12 +257,12 @@ article{
     100%{transform:translateY(.9)}
 }
 
-.figBenefits img:hover{
+.figBenefits:hover{
     animation-name: smalling;
     animation-duration: 1s;
 }
 
-.figBenefits img:active{
+.figBenefits:active{
     animation-name: smalling;
     animation-duration: 1s;
 
