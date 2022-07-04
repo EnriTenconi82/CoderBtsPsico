@@ -210,8 +210,8 @@ article{
 
 /* images sizes positionings global*/
 .logo{
-    height: 7rem;
-    
+    height: 9rem;
+    padding: 1rem;
 }
 
 
@@ -257,12 +257,12 @@ article{
     100%{transform:translateY(.9)}
 }
 
-.figBenefits:hover{
+.figBenefits img:hover{
     animation-name: smalling;
     animation-duration: 1s;
 }
 
-.figBenefits:active{
+.figBenefits img:active{
     animation-name: smalling;
     animation-duration: 1s;
 
